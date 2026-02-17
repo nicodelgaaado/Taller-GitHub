@@ -43,6 +43,13 @@
       margin-bottom: 22px;
     }
 
+    .ficha-principal {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
     .datos {
       display: grid;
       grid-template-columns: 1fr;
@@ -67,6 +74,24 @@
       margin: 0;
       line-height: 1.6;
     }
+
+    .imagen-animal {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 12px;
+      display: block;
+      margin-left: auto;
+    }
+
+    @media (max-width: 768px) {
+      .ficha-principal {
+        grid-template-columns: 1fr;
+      }
+
+      .imagen-animal {
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -76,7 +101,7 @@
       <p class="subtitulo">Ficha descriptiva del animal</p>
     </header>
 
-    <section class="tarjeta" aria-label="Datos principales de la jirafa">
+    <section class="tarjeta ficha-principal" aria-label="Datos principales de la jirafa">
       <ul class="datos">
         <li><strong>Nombre común:</strong> Jirafa</li>
         <li><strong>Nombre científico:</strong> <em>Giraffa camelopardalis</em></li>
@@ -85,6 +110,11 @@
         <li><strong>Tamaño:</strong> De 4,27 a 5,79 metros</li>
         <li><strong>Peso:</strong> De 793,79 a 1270,06 kilos</li>
       </ul>
+      <img
+        class="imagen-animal"
+        src="https://content.nationalgeographic.com.es/medio/2022/12/12/jirafa-1_8d99b97c_221212155836_1280x720.jpg"
+        alt="Jirafa adulta de pie en su hábitat natural"
+      />
     </section>
 
     <section class="tarjeta" aria-label="Descripción del hábitat">
