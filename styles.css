@@ -105,3 +105,31 @@ a {
     margin: 0 auto;
   }
 }
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .tarjeta {
+    background: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+body.dark-mode a {
+    color: #4da6ff;
+}
+
+body.dark-mode .subtitulo {
+    color: #ccc;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tarjeta {
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}

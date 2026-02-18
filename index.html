@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jirafa</title>
-<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main class="contenedor">
@@ -16,6 +16,12 @@
         pelaje con manchas y su gran adaptación para alimentarse de hojas en la parte alta de los árboles.
       </p>
     </header>
+
+    <!-- Botones para JS -->
+    <div style="text-align: center; margin: 20px 0;">
+      <button id="theme-toggle" style="padding: 10px 20px; margin: 5px; background-color: #0b4ea2; color: white; border: none; border-radius: 5px; cursor: pointer;">Cambiar a Modo Oscuro</button>
+      <button id="info-toggle" style="padding: 10px 20px; margin: 5px; background-color: #0b4ea2; color: white; border: none; border-radius: 5px; cursor: pointer;">Mostrar Más Información</button>
+    </div>
 
     <section class="tarjeta ficha-principal" aria-label="Datos principales de la jirafa">
       <ul class="datos">
@@ -53,6 +59,20 @@
         <li><a href="https://www.iucnredlist.org/species/9194/136266699" target="_blank" rel="noopener noreferrer">IUCN Red List: Giraffa camelopardalis</a></li>
       </ul>
     </section>
+
+    <!-- Sección de información extra (inicialmente oculta) -->
+    <section class="tarjeta" id="extra-info" style="display: none;" aria-label="Más detalles sobre la jirafa">
+      <h2>Más Detalles sobre la Jirafa</h2>
+      <p>Las jirafas tienen un corazón enorme (pesa hasta 11 kg) para bombear sangre a través de su largo cuello. Su lengua mide hasta 45 cm y es azulada para protegerse del sol. Además, pueden dormir solo 30 minutos al día, paradas.</p>
+      <ul>
+        <li><strong>Hábitat extendido:</strong> Principalmente en África, desde Chad hasta Sudáfrica.</li>
+        <li><strong>Alimentación detallada:</strong> Comen hasta 34 kg de hojas diarias, usando su lengua para arrancarlas.</li>
+        <li><strong>Comportamiento:</strong> Son pacíficas, pero los machos luchan con el cuello en "combates de cabezazos".</li>
+      </ul>
+    </section>
   </main>
+
+  <!-- Enlace a script.js -->
+  <script src="script.js"></script>
 </body>
 </html>
